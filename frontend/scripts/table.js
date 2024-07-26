@@ -19,7 +19,7 @@ searchForm.addEventListener("submit", (event) => {
 async function fetchCustomers(column = "", search = "") {
   try {
     const url = new URL(
-      "http://localhost:8080/customers",
+      "https://hiteshsunbase-production.up.railway.app/customers",
       window.location.origin
     );
 
@@ -135,7 +135,7 @@ function saveCustomer(row) {
   console.log("updatedCustomer", updatedCustomer);
   const token = localStorage.getItem("jwt");
   // Assuming you have an API endpoint to update customer data
-  fetch(`http://localhost:8080/customers`, {
+  fetch(`https://hiteshsunbase-production.up.railway.app/customers`, {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -162,7 +162,7 @@ async function deleteCustomer(id) {
       // Retrieve the JWT token from localStorage
       const token = localStorage.getItem("jwt");
 
-      const response = await fetch(`http://localhost:8080/customers/${id}`, {
+      const response = await fetch(`https://hiteshsunbase-production.up.railway.app/customers/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -193,7 +193,7 @@ async function sync() {
       
       const access_token = localStorage.getItem("access_token");
 
-      const response = await fetch(`http://localhost:8080/customers/sync`, {
+      const response = await fetch(`https://hiteshsunbase-production.up.railway.app/customers/sync`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,

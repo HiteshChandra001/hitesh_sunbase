@@ -19,7 +19,7 @@ document.getElementById('customerForm').addEventListener('submit', async functio
         // Retrieve the JWT token from localStorage
         const token = localStorage.getItem('jwt');
 
-        const response = await fetch('http://localhost:8080/customers', {
+        const response = await fetch('https://hiteshsunbase-production.up.railway.app/customers', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
