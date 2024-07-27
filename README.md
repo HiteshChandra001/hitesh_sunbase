@@ -70,6 +70,17 @@ Use the following test credentials to log in and explore the application:
 
     The backend server will run on `http://localhost:8080`.
 
+   
+3. **Create admin by postman**:
+    
+   curl --location 'http://localhost:8080/auth/signup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email":"raju@gmail.com",
+    "password":"12345"
+}'
+    
+
 ### Frontend Setup
 
 1. **Open the frontend directory**:
@@ -87,7 +98,7 @@ Use the following test credentials to log in and explore the application:
 - **GET /customers**: Retrieve a list of customers with searching.
 - **GET /customers/{id}**: Get a customer by ID.
 - **DELETE /customers/{id}**: Delete a customer by ID.
-- **PATCH /customers/sync: Sync customers data from sunbase database.
+- **PATCH /customers/sync**: Sync customers data from sunbase database.
 
 ## Authentication
 
