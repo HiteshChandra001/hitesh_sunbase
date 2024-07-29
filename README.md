@@ -101,7 +101,7 @@ Use the following test credentials to log in and explore the application:
 ## API Endpoints
 
 - **POST /customers**: Create a new customer.
-- **PUT /customers: Update an existing customer.
+- **PUT /customers**: Update an existing customer.
 - **GET /customers**: Retrieve a list of customers with searching.
 - **GET /customers/{id}**: Get a customer by ID.
 - **DELETE /customers/{id}**: Delete a customer by ID.
