@@ -28,11 +28,11 @@ Use the following test credentials to log in and explore the application:
 - **JWT Authentication**: Secure the application using JSON Web Tokens.
 - **Sync Data**: Sync Data from sunbase Database.
 
-## UI 
+## UI Screenshots
 
-<img src="https://imgur.com/nzlTf4L">
-<img src="https://imgur.com/huEthCr">
-<img src="https://imgur.com/b8Z6i6r>
+<img src="https://i.imgur.com/nzlTf4L.png">
+<img src="https://imgur.com/huEthCr.png">
+<img src="https://imgur.com/b8Z6i6r.png">
 
 
 ## Technologies Used
